@@ -24,14 +24,14 @@
     color: #ce1212 !important;
 }
 
-/* Genel stats alanı */
+
 .stats-section {
     position: relative;
     color: #fff;
     overflow: hidden;
   }
   
-  /* Arka plan görseli */
+ 
   .stats-bg {
     position: absolute;
     top: 0;
@@ -41,8 +41,7 @@
     object-fit: cover;
     z-index: 1;
   }
-  
-  /* Siyah karartma */
+
   .overlay {
     position: absolute;
     top: 0;
@@ -53,14 +52,14 @@
     z-index: 2;
   }
   
-  /* İçerik katmanı */
+  
   .stats-content {
     position: relative;
     z-index: 3;
     padding: 5rem 0;
   }
   
-  /* Sayı kutuları */
+
   .stats-item {
     width: 100%;
     height: 100%;
@@ -221,7 +220,7 @@
     font-family: 'Shadows Into Light', cursive;
     font-size: 36px;
     font-weight: bold;
-    color: #b02a37; /* Kırmızı ton */
+    color: #b02a37; 
     text-transform: uppercase;
     margin: 0;
   }
@@ -249,7 +248,7 @@
     font-weight: bold;
   }
 
-  /* Genel Menü Tab Ayarları */
+
 .nav-tabs {
   border-bottom: none;
   justify-content: center;
@@ -271,7 +270,7 @@
 }
 
 .nav-tabs .nav-link.active {
-  color: #dc3545; /* kırmızı */
+  color: #dc3545; 
 }
 
 .nav-tabs .nav-link.active::after {
@@ -285,7 +284,7 @@
   border-radius: 3px;
 }
 
-/* Menü Başlıkları */
+
 .menu-subtitle {
   font-size: 14px;
   color: gray;
@@ -303,7 +302,7 @@
   text-align: center;
 }
 
-/* Menü Kartları */
+
 .menu-item-card {
   background-color: #fff;
   border-radius: 10px;
@@ -333,13 +332,13 @@
   box-sizing: border-box;
 }
 .swiper-pagination-bullet {
-  background-color: #dc3545 !important; /* Bootstrap'in text-danger rengi */
+  background-color: #dc3545 !important; 
   opacity: 0.6;
 }
 
 /* Aktif olan buton daha koyu görünsün */
 .swiper-pagination-bullet-active {
-  background-color: #b02a37 !important; /* Daha koyu kırmızı */
+  background-color: #b02a37 !important; 
   opacity: 1;
 }
   
@@ -362,34 +361,34 @@
 .footer{
   color:white
 }
-/* Genel footer arka plan ve yazı rengi */
+
 .footer.dark-background {
-  background-color: #111; /* siyah gibi koyu */
-  color: #fff; /* yazılar beyaz */
+  background-color: #111; 
+  color: #fff;
   font-size: 14px;
 }
 
-/* Footer başlıkları */
+
 .footer h4 {
   font-weight: 600;
   margin-bottom: 10px;
   color: #fff;
 }
 
-/* İkonlar kırmızı ve hizalı */
+
 .footer .icon {
   font-size: 24px;
-  color: #c00; /* koyu kırmızı */
+  color: #c00; 
   margin-right: 15px;
 }
 
-/* Adres, iletişim ve saat bilgisi hizalaması */
+
 .footer .d-flex {
   align-items: flex-start;
   gap: 10px;
 }
 
-/* Sosyal medya ikonları */
+
 .footer .social-links a {
   display: inline-flex;
   align-items: center;
@@ -398,20 +397,20 @@
   height: 36px;
   margin-right: 10px;
   background: none;
-  border: 1px solid #888; /* gri çerçeve */
+  border: 1px solid #888;
   border-radius: 50%;
   color: #fff;
   font-size: 18px;
   transition: 0.3s;
 }
 
-/* Hover efekti ikonlara */
+
 .footer .social-links a:hover {
   border-color: #c00;
   color: #c00;
 }
 
-/* Copyright yazısı */
+
 .footer .copyright {
   border-top: 1px solid #333;
   padding-top: 20px;
@@ -423,4 +422,493 @@
 .footer .sitename {
   color: #fff;
   font-weight: bold;
+}
+
+/* Genel Responsive Ayarlar */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Menü Bölümü Responsive Ayarları */
+.menu-section {
+  padding: 2rem 0;
+}
+
+.menu-section .nav-tabs {
+  border-bottom: none;
+  margin-bottom: 2rem;
+}
+
+.menu-section .nav-link {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: none;
+  color: #6c757d;
+  transition: all 0.3s ease;
+}
+
+.menu-section .nav-link.active {
+  color: #dc3545;
+  background: none;
+  border-bottom: 2px solid #dc3545;
+}
+
+.menu-section .tab-header {
+  margin-bottom: 2rem;
+}
+
+.menu-section .menu-subtitle {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+.menu-section .menu-category {
+  font-size: 1.5rem;
+  color: #212529;
+}
+
+/* Mobil Menü Düzenlemeleri */
+@media (max-width: 576px) {
+  .menu-section .nav-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-section .nav-item {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .menu-section .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-section .tab-header {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Kartlar için Responsive Ayarlar */
+.card {
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Footer Responsive Ayarları */
+@media (max-width: 768px) {
+  .footer .col-lg-3 {
+    margin-bottom: 2rem;
+  }
+
+  .footer .social-links {
+    justify-content: center;
+  }
+}
+
+/* Form Elemanları Responsive Ayarları */
+@media (max-width: 576px) {
+  .form-control {
+    margin-bottom: 1rem;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+}
+
+/* Swiper Responsive Ayarları */
+@media (max-width: 768px) {
+  .swiper {
+    padding: 0 1rem;
+  }
+}
+
+/* AOS Animasyonları için Responsive Ayarlar */
+@media (max-width: 768px) {
+  [data-aos] {
+    pointer-events: auto !important;
+  }
+  
+  .aos-init:not(.aos-animate) {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Chefs Section Styles */
+.chef-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.chef-card:hover {
+  transform: translateY(-10px);
+}
+
+.chef-card .card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+.chef-card .card-body {
+  padding: 1.5rem;
+}
+
+.chef-card h4 {
+  color: #212529;
+  font-weight: 600;
+}
+
+.chef-card p {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+/* Video Button Styles */
+.video-container {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.video-thumbnail {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: rgba(220, 53, 69, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.play-btn i {
+  font-size: 2rem;
+  color: white;
+}
+
+.play-btn:hover {
+  background: #dc3545;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Responsive adjustments for chefs section */
+@media (max-width: 768px) {
+  .chef-card {
+    margin-bottom: 2rem;
+  }
+  
+  .chef-card .card-img-top {
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .chef-card .card-img-top {
+    height: 200px;
+  }
+  
+  .play-btn {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .play-btn i {
+    font-size: 1.5rem;
+  }
+}
+
+/* Events Section Styles */
+.events-section {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+}
+
+.event-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+}
+
+.event-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.event-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 2rem 1.5rem;
+  color: white;
+}
+
+.event-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.event-info .price {
+  font-size: 1.25rem;
+  color: #dc3545;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.event-info .description {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  opacity: 0.9;
+}
+
+.events-swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.events-swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: auto;
+}
+
+.events-swiper .swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+}
+
+.events-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #dc3545;
+  opacity: 0.5;
+}
+
+.events-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Responsive adjustments for events swiper */
+@media (max-width: 768px) {
+  .events-swiper .swiper-slide {
+    width: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .events-swiper .swiper-slide {
+    width: 200px;
+  }
+}
+
+/* Font Styles */
+.navbar-nav .nav-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.btn-danger {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.hero-section h1 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.hero-section p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.section-title + p {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* Events Section Font Styles */
+.events-section .text-muted {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.events-section .fs-4 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+}
+
+/* Navbar Styles */
+.navbar-nav .nav-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    position: relative;
+    color: #7f7f90;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #5d5d64;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ce1212 !important;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #ce1212;
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #ce1212;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+/* Menu Section Styles */
+.menu-section .row {
+  justify-content: center;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.menu-item img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.menu-item h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.menu-item .ingredients {
+  font-family: 'Roboto', sans-serif;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+.menu-item .price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #dc3545;
+  font-size: 1.2rem;
+}
+
+/* Responsive adjustments for menu section */
+@media (max-width: 768px) {
+  .menu-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .menu-item img {
+    max-width: 250px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-item img {
+    max-width: 200px;
+    height: 150px;
+  }
 }
